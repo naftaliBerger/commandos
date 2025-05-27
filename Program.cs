@@ -10,7 +10,8 @@ namespace CommandoProject
     {
         static void Main(string[] args)
         {
-            Commando Commando = new Commando("Israel", 123);
+            Commando Commando = new Commando("Israel", "a123");
+            Commando.SayName("GENERAL");
             Commando.Walk();
             Commando.Hide();
             Commando.Attack();

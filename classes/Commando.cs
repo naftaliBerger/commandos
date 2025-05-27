@@ -3,15 +3,32 @@ using System.Net.NetworkInformation;
 
 public class Commando
 {
-    public string name;
-    public int codeName;
+    private string name;
+    public string codeName{get; set;}
     public string[] tools  = { "Petite" , "Chisel" ,"Rope" , "WaterBag" };
     public string status;
 
-    public Commando(string nane , int codeName)
+    public Commando(string nane , string codeName)
     {
         this.name = nane;
         this.codeName = codeName;
+    }
+
+    public void SayName(string commanderRank)
+    {
+        if (commanderRank == "GENERAL")
+        {
+            Console.WriteLine(name);
+        }
+        else if (commanderRank == "COLONEL")
+        {
+            Console.WriteLine(codeName);
+
+        }
+        else 
+        {
+            Console.WriteLine("This information is classified!!!!");
+        }
     }
 
     public void Walk()
