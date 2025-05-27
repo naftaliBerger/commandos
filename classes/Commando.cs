@@ -41,7 +41,7 @@ public class Commando
         status = "Hiding";
         Console.WriteLine("The Soldier is Hiding");
     }
-    public void Attack()
+    public virtual void Attack()
     {
         Console.WriteLine($"Commando with a code name: {codeName} Attack !!!");
     }
