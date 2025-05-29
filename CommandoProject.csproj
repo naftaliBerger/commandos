@@ -43,9 +43,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="classes\AirFighter.cs" />
+    <Compile Include="classes\AirCommando.cs" />
+    <Compile Include="classes\AK47.cs" />
+    <Compile Include="classes\CommandoFactory.cs" />
+    <Compile Include="classes\CreateWeapons.cs" />
     <Compile Include="classes\Commando.cs" />
-    <Compile Include="classes\SeaWarrior.cs" />
+    <Compile Include="classes\enemy.cs" />
+    <Compile Include="classes\EnemyFactory .cs" />
+    <Compile Include="classes\Game.cs" />
+    <Compile Include="classes\IBreakable.cs" />
+    <Compile Include="classes\IShootable.cs" />
+    <Compile Include="classes\Knife.cs" />
+    <Compile Include="classes\M16.cs" />
+    <Compile Include="classes\WeaponFactory.cs" />
+    <Compile Include="classes\SeaCommando.cs" />
+    <Compile Include="classes\Stone.cs" />
     <Compile Include="classes\Weapon.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

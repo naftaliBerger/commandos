@@ -5,12 +5,12 @@ public class Commando
 {
     private string name;
     public string codeName{get; set;}
-    public string[] tools  = { "Petite" , "Chisel" ,"Rope" , "WaterBag" };
+    public string[] tools = { "Hammer", "Chisel", "Rope", "Bag", "WaterBottle" };
     public string status;
 
-    public Commando(string nane , string codeName)
+    public Commando(string name , string codeName)
     {
-        this.name = nane;
+        this.name = name;
         this.codeName = codeName;
     }
 
@@ -41,7 +41,7 @@ public class Commando
         status = "Hiding";
         Console.WriteLine("The Soldier is Hiding");
     }
-    public void Attack()
+    public virtual void Attack()
     {
         Console.WriteLine($"Commando with a code name: {codeName} Attack !!!");
     }
